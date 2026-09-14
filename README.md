@@ -77,15 +77,3 @@ Cada ejercicio trae el enunciado en los comentarios de su código. La columna
 | 05 · Peticiones HTTP con fetch | `01_fetch` · lista de usuarios con estados de carga y error | `UD3/10_fetch` |
 | 06 · Módulos ES | `01_split_modules` · dividir una aplicación en módulos | nuevo |
 | | `02_module_once` · un módulo compartido se ejecuta una vez | nuevo |
-
-## Módulos pendientes de publicar
-
-Copiados tal cual; todavía no se han revisado contra el temario.
-
-| Módulo | Proyecto | Origen |
-|---|---|---|
-| 03 · TypeScript | — | — |
-| 04 · Vue.js: componentes y reactividad | `todo-list` · lista de tareas con componentes, props y eventos | `vue/todo-list` |
-| 05 · Vue.js: aplicaciones | `router` · Vue Router con rutas con parámetros como `/posts/:id` (proyecto en `frontend/`, datos en `backend/db.json`) | `vue/router` |
-| | `full-project` · router, Pinia y API REST (`db.json`) | `vue/full-project` |
-| 06 · Nuxt | — | — |

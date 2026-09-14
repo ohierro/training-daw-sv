@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi blog · selección en el DOM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mi blog</h1>
+        <p class="subtitulo">escrito por mí</p>
+    </header>
+    <div class="container">
+        <main>
+            <article id="introduccion" class="entrada" data-id="1">
+                <h2>Introducción</h2>
+                <p class="primero">
+                    Dolorum quisquam vel earum unde ut voluptatem. Veritatis qui omnis magni ullam est voluptatem.
+                    Atque eaque reprehenderit odit.
+                </p>
+                <p>
+                    Quas laudantium atque reprehenderit autem eum. Doloremque similique et. Omnis rerum asperiores
+                    perspiciatis vel voluptatum.
+                </p>
+                <div class="botones">
+                    <button type="button" class="like">Me gusta</button>
+                    <button type="button" class="comentar">Comentar</button>
+                </div>
+            </article>
+            <article id="segunda-entrada" class="entrada" data-id="2">
+                <h2>Segunda entrada</h2>
+                <p class="primero">
+                    Blanditiis expedita dicta rem voluptatem aut quos. Molestiae et magnam. A quo ab fugit vitae
+                    et dolorum.
+                </p>
+                <p>
+                    Non alias et autem. Laborum in dignissimos aut. Cumque doloremque quam error ipsa doloribus
+                    nihil pariatur.
+                </p>
+                <div class="botones">
+                    <button type="button" class="like">Me gusta</button>
+                    <button type="button" class="comentar">Comentar</button>
+                </div>
+            </article>
+        </main>
+        <nav id="nav">
+            <ul class="items">
+                <li class="item">Elemento 1</li>
+                <li class="item">Elemento 2</li>
+                <li class="item">Elemento 3</li>
+            </ul>
+            <form class="suscripcion">
+                <label for="username">Nombre de usuario:</label>
+                <input id="username" name="username">
+                <button>Enviar</button>
+            </form>
+        </nav>
+    </div>
+</body>
+</html>

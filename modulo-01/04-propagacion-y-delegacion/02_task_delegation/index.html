@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de tareas · delegación</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 1rem; max-width: 36rem; }
+        li { display: flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0; }
+        li .texto { flex: 1; }
+        li.hecha .texto { text-decoration: line-through; opacity: 0.6; }
+    </style>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <h1>Tareas</h1>
+    <form id="nueva-tarea">
+        <label for="texto">Nueva tarea</label>
+        <input id="texto" name="texto" required>
+        <button>Añadir</button>
+    </form>
+    <ul id="lista"></ul>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>No bloquees el hilo</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 1rem; }
+        /* Se anima left (no transform) a propósito: transform lo puede animar el
+           navegador fuera del hilo principal y seguiría moviéndose aunque esté bloqueado. */
+        .pista { width: 14rem; height: 1rem; background: #eee; border-radius: 1rem; }
+        .pelota { position: relative; width: 1rem; height: 1rem; border-radius: 50%; background: #0ba5ec;
+                  animation: ir 1s ease-in-out infinite alternate; }
+        @keyframes ir { from { left: 0; } to { left: 13rem; } }
+        progress { width: 100%; max-width: 30rem; }
+    </style>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <h1>Contar números primos</h1>
+    <p>Esta animación se detiene si el hilo principal está ocupado:</p>
+    <div class="pista"><div class="pelota"></div></div>
+    <p>
+        <button type="button" id="bloqueante">Calcular bloqueando</button>
+        <button type="button" id="por-trozos">Calcular por trozos</button>
+    </p>
+    <p id="estado">Listo.</p>
+    <progress id="progreso" max="100" value="0"></progress>
+</body>
+</html>

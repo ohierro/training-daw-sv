@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fases de un evento</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 1rem; }
+        .caja { border: 2px solid; border-radius: 8px; padding: 1.5rem; margin: 0.5rem; }
+        #abuela { border-color: #7a5af8; }
+        #madre { border-color: #0ba5ec; }
+        #hija { border-color: #12b76a; }
+    </style>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <p>Haz clic en las distintas cajas y mira la consola.</p>
+    <div id="abuela" class="caja">abuela
+        <div id="madre" class="caja">madre
+            <button type="button" id="hija" class="caja">hija <span id="nieta">(texto)</span></button>
+        </div>
+    </div>
+</body>
+</html>

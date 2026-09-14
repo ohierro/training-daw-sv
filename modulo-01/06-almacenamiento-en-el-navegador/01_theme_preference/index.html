@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Preferencia de tema</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 0; padding: 1rem; background: #fff; color: #222; transition: background 0.2s; }
+        body.oscuro { background: #16181d; color: #e6e6e6; }
+        body.grande { font-size: 1.25rem; }
+    </style>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <h1>Preferencias</h1>
+    <p>Elige tus preferencias y recarga la página: deberían mantenerse.</p>
+    <label><input type="checkbox" id="oscuro"> Tema oscuro</label><br>
+    <label><input type="checkbox" id="grande"> Texto grande</label>
+    <p><button type="button" id="restablecer">Restablecer</button></p>
+    <p>Visitas a esta página: <strong id="visitas">0</strong></p>
+</body>
+</html>
